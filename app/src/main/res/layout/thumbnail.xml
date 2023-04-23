@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="20dp"
+    app:cardCornerRadius="15dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/placeholderImageCard"
+            android:layout_width="match_parent"
+            android:layout_height="290dp"
+            android:src="@drawable/placeholder"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/nameCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingVertical="20dp"
+            tools:text="Petits pois et carottes"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            app:layout_constraintTop_toBottomOf="@id/placeholderImageCard"
+            app:layout_constraintLeft_toLeftOf="@id/guideline" />
+        <TextView
+            android:id="@+id/brandCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            tools:text="Cassegrin"
+            android:textStyle="italic"
+            android:textSize="15sp"
+            app:layout_constraintTop_toBottomOf="@id/nameCard"
+            app:layout_constraintLeft_toLeftOf="@id/guideline" />
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/bookmarks"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:src="@drawable/nav_bar_bookmarks"
+            android:scaleType="centerCrop"
+            app:layout_constraintRight_toLeftOf="@id/rightGuideline"
+            app:layout_constraintTop_toTopOf="@id/nameCard"
+            app:layout_constraintBottom_toBottomOf="@id/nameCard"/>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/stats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ranking"
+            android:scaleType="centerCrop"
+            app:layout_constraintLeft_toRightOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@id/brandCard"
+            android:padding="10dp"
+            />
+        <TextView
+            android:id="@+id/nutriscoreCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Nutriscore: A"
+            android:textStyle="italic"
+            android:textSize="15sp"
+            app:layout_constraintLeft_toRightOf="@id/stats"
+            app:layout_constraintTop_toTopOf="@id/stats"
+            app:layout_constraintBottom_toBottomOf="@id/stats"/>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/calories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/calories"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintLeft_toRightOf="@id/nutriscoreCard"
+            app:layout_constraintTop_toBottomOf="@id/brandCard"
+            android:padding="10dp"
+            />
+        <TextView
+            android:id="@+id/caloriesCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="234 kCal/part"
+            android:textStyle="italic"
+            android:textSize="15sp"
+            app:layout_constraintLeft_toRightOf="@+id/calories"
+            app:layout_constraintTop_toTopOf="@id/stats"
+            app:layout_constraintBottom_toBottomOf="@id/stats"
+            />
+
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            app:layout_constraintTop_toBottomOf="@id/placeholderImage"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="20dp" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/rightGuideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="20dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

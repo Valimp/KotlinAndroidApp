@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/ficheFragment"
+        android:title="Fiche"
+        android:icon="@drawable/nav_bar_stats" />
+
+    <item android:id="@+id/nutritionFragment"
+        android:title="Nutrition"
+        android:icon="@drawable/calories" />
+
+    <item android:id="@+id/arrayFragment"
+        android:title="Tableau"
+        android:icon="@drawable/nav_bar_cart" />
+
+</menu>

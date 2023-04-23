@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/placeholderImage"
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        tools:src="@drawable/placeholder"
+        android:scaleType="centerCrop"
+        />
+
+    <LinearLayout
+        android:id="@+id/placeholderHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/placeholderTypeAndBrand"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Petits pois et carottes"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/brand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Cassegrin"
+                android:textStyle="italic"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/nutriscore"
+            android:layout_width="78dp"
+            android:layout_height="42dp"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/nutriscore_e"
+
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/barcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="15dp"
+        tools:text="Code barres : 3083680085304"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Quantité : 400g (280 g net égoutté)"
+        android:textSize="15sp"
+        android:paddingHorizontal="15dp"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/saleCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Vendu en : France, Japon, Suisse"
+        android:textSize="15sp"
+        android:paddingHorizontal="15dp"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/ingrediant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Ingrédiants : Petits pois 66%, eau, garniture 2,8% (salade, oignon grelot), sucre, sel, arôme naturel"
+        android:textSize="15sp"
+        android:paddingTop="15dp"
+        android:paddingStart="15dp"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/allergens"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Substances allergènes : Aucune"
+        android:textSize="15sp"
+        android:paddingTop="15dp"
+        android:paddingStart="15dp"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/additives"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Additifs : Aucun"
+        android:textSize="15sp"
+        android:paddingTop="15dp"
+        android:paddingStart="15dp"
+        android:textColor="@color/black"/>
+
+
+
+</LinearLayout>

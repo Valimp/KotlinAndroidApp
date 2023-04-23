@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Mon comparateur</string>
+    <string name="toast_text">Bienvenue chez Comparateur</string>
+</resources>
